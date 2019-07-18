@@ -18,6 +18,7 @@ define(function (require) {
         }
         $movieList.innerHTML = render(response.data);
     });
+    
     // window.addEventListener('load', function(event) {
     //     if('serviceWorker' in window.navigator) {
     //         navigator.serviceWorker.register('sw.js',{scope:'/'}).then(function(registeration){

@@ -1,8 +1,3 @@
-/**
- * @file render.js
- * @author huanghuiquan
- */
-
 define(function (require) {
     'use strict';
 

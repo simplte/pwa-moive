@@ -1,8 +1,3 @@
-/**
- * @file main.js
- * @author huanghuiquan
- */
-
 define(function (require) {
     'use strict';
     let axios = require('axios');

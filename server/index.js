@@ -1,7 +1,3 @@
-/**
- * @file index.js
- * @author huanghuiquan
- */
 
 let path = require('path');
 let express = require('express');
@@ -9,7 +5,7 @@ let fs = require('fs');
 
 let app = express();
 let port = 8080;
-
+// 模拟接口数据，抓取的豆瓣api接口的数据
 let movies = JSON.parse(
     fs.readFileSync(
         path.join(__dirname, '/movies.json'),
@@ -19,12 +15,8 @@ let movies = JSON.parse(
     )
 );
 
-/**
- * Shuffles array in place. ES6 version
- *
- * @param {Array} a items An array containing the items.
- * @return {Array} shuffled array
- */
+
+// 随机数
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
